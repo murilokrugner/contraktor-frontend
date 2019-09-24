@@ -1,8 +1,10 @@
 import styled from 'styled-components';
+//import { darken } from 'polished';
 
 export const Container = styled.div`
-  background: #fff;
+  background: #ffffff;
   padding: 0 30px;
+  border-bottom: solid 2px rgba(180, 180, 180, 0.24);
 `;
 
 export const Content = styled.div`
@@ -12,23 +14,32 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
+
   nav {
     display: flex;
     align-items: center;
-    img {
-      height: 60px;
-      width: 90px;
-      margin-right: 20px;
-      padding-right: 20px;
-      border-right: 1px solid #eee;
-    }
+
     a {
       font-weight: bold;
-      color: #7159c1;
+      color: #00BFFF;
+      font-size: 16px;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      color: #667580;
+      font-weight: bold;
+      margin-left: 30px;
     }
   }
-  aside {
-    display: flex;
-    align-items: center;
-  }
 `;
+

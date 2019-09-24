@@ -8,7 +8,6 @@ export default function Main() {
   return (
     <Container>
       <Header />
-      <button type="submit">Cadastrar Contrato</button>;
     </Container>
   );
 }

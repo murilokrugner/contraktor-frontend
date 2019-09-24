@@ -6,11 +6,18 @@ import { Container, Content } from './styles';
 export default function Header() {
   return (
     <Container>
-      <Content>
-        <nav>
-          <Link to="/">DASHBOARD</Link>
-        </nav>
-      </Content>
+        <Content>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">INICIO</Link>
+              </li>
+              <li>
+                <Link to="/">SAIR</Link>
+              </li>
+            </ul>
+          </nav>
+        </Content>
     </Container>
   );
 }
