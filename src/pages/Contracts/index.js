@@ -13,17 +13,26 @@ export default function Contracts() {
     <Container>
       <Header />
       <Boxer>
-        <Link to="/newcontracts">
-          <button type="submit">Novo Contrato</button>
+        <Link to="/newcontract">
+          <button className="new" type="submit">Novo Contrato</button>
         </Link>
+        <div>
+          <input type="text" id="txtBusca" placeholder="Buscar..."/>
+          <button className="search" type="submit">Pesquisar</button>
+        </div>
       </Boxer>
       <ListContracts>
-        <li>
-          Contrato
-          <div>
-            <img src={deleteIcon} alt="delete icon" />
-          </div>
-        </li>
+        <h3>Todos os contratos</h3>
+          <li>
+            <Link to="viewcontract">
+              Contrato
+            </Link>
+            <div className="divDelete">
+              <button className="delete" title="Deletar contato">
+                <img src={deleteIcon} alt="delete icon" />
+              </button>
+            </div>
+          </li>
         <li>Contrato</li>
         <li>Contrato</li>
         <li>Contrato</li>

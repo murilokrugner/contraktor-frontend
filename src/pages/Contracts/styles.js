@@ -5,8 +5,45 @@ export const Container = styled.div``;
 
 export const Boxer = styled.div`
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
-  button {
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    input {
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 220px;
+      border: 1px solid #e6ecf0;
+      height: 35px;
+      padding: 0 30px 0 12px;
+      border-radius: 16px;
+      color: #667581;
+      font-size: 12px;
+      background: #f5f8fa url("/images/search.svg") no-repeat 190px center;
+    }
+  }
+
+  button.search {
+    margin: 35px 10px 0;
+    height: 30px;
+    width: 100px;
+    background: #fff;
+    font-weight: bold;
+    color: #00bfff;
+    border: 0;
+    border-radius: 7px;
+    font-size: 13px;
+    transition: background 0.2s;
+    &:hover {
+      background: ${darken(0.04, '#fff')};
+    }
+  }
+
+  button.new {
     margin: 50px 70px 0;
     height: 44px;
     width: 150px;
@@ -21,6 +58,7 @@ export const Boxer = styled.div`
       background: ${darken(0.04, '#fff')};
     }
   }
+
 `;
 
 export const Box = styled.div`
@@ -52,7 +90,16 @@ export const ListContracts = styled.ul`
   align-items: center;
   justify-content: center;
 
+  h3 {
+    display: flex;
+    padding: 20px;
+    font: 20px 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #00bfff;
+  }
+
   li {
+    text-decoration: none;
     list-style: none;
     font: 15px 'Roboto', sans-serif;
     font-weight: bold;
@@ -66,14 +113,24 @@ export const ListContracts = styled.ul`
     background-color: #ffffff;
     position: relative;
 
-    div {
+    a {
+      color:#00bfff;
+      text-decoration: none;
+    }
+
+    div.divDelete {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
 
-      img {
+      button.delete {
+        border: 0;
+        background-color: #ffffff;
+      }
 
+      img.title{
+        color: #fff;
       }
     }
   }
