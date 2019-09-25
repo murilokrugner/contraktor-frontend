@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
 
+import deleteIcon from '../../assets/eraser.svg';
+
 import { Container, Box, Boxer, ListContracts } from './styles';
 
 export default function Contracts() {
@@ -16,7 +18,12 @@ export default function Contracts() {
         </Link>
       </Boxer>
       <ListContracts>
-        <li>Contrato</li>
+        <li>
+          Contrato
+          <div>
+            <img src={deleteIcon} alt="delete icon" />
+          </div>
+        </li>
         <li>Contrato</li>
         <li>Contrato</li>
         <li>Contrato</li>

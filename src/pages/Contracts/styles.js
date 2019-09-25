@@ -56,6 +56,7 @@ export const ListContracts = styled.ul`
     list-style: none;
     font: 15px 'Roboto', sans-serif;
     font-weight: bold;
+    padding: 20px;
     color: #00bfff;
     margin: 30px;
     width: 30rem;
@@ -64,5 +65,20 @@ export const ListContracts = styled.ul`
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     position: relative;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      img {
+
+      }
+    }
   }
+
+
+
+
 `;
