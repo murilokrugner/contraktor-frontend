@@ -13,9 +13,7 @@ export default function ViewContract() {
 
       <div className="partes">
         <h3>Partes referetes ao contrato</h3>
-
         <li>teste</li>
-
       </div>
     </Container>
   );

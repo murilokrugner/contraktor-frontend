@@ -11,13 +11,21 @@ export const Container = styled.ul`
   }
 
   div.partes{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    font: 15px 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    color: #00bfff;
+    margin: 60px;
+    width: 30rem;
+    height: 25rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    position: relative;
 
     h3 {
-      margin-top: 70px;
       margin-left: 160px;
       color: #00bfff;
     }

@@ -82,13 +82,18 @@ export const ListContracts = styled.ul`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   h3 {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding: 20px;
     font: 20px 'Roboto', sans-serif;
     font-weight: bold;
     color: #00bfff;
   }
+
   li {
     text-decoration: none;
     list-style: none;
@@ -103,6 +108,7 @@ export const ListContracts = styled.ul`
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     position: relative;
+
     a {
       color: #00bfff;
       text-decoration: none;
