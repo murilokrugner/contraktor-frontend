@@ -1,25 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import api from '../../services/api';
+import React from 'react';
+import Header from '../../components/Header';
+//import api from '../../services/api';
 import { Container } from './styles';
 
-import Header from '../../components/Header';
-
 export default function ViewContract() {
-  const [contracts, setContracts] = useState([]);
 
-  useEffect(() => {
-    async function loadContracts() {
-      const response = await api.get(`/contracts/`);
-
-      setContracts(response.data);
-    }
-
-    loadContracts();
-  }, []);
 
   return (
     <Container>
       <Header />
+      <h1>Contrato: </h1>
+
+      <div className="partes">
+        <h3>Partes referetes ao contrato</h3>
+
+        <li>teste</li>
+
+      </div>
     </Container>
   );
 }
+

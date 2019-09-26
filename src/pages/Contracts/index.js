@@ -7,8 +7,7 @@ import Header from '../../components/Header';
 
 import deleteIcon from '../../assets/eraser.svg';
 
-import { Container, Boxer, ListContracts, List } from './styles';
-import ViewContract from '../ViewContract';
+import { Container, Boxer, ListContracts } from './styles';
 
 export default function Contracts() {
   const [contracts, setContracts] = useState([]);
