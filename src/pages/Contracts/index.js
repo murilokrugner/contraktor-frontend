@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import api from '../../services/api';
 
 import { Link } from 'react-router-dom';
 
@@ -6,26 +7,45 @@ import Header from '../../components/Header';
 
 import deleteIcon from '../../assets/eraser.svg';
 
-import { Container, Box, Boxer, ListContracts } from './styles';
+import { Container, Boxer, ListContracts, List } from './styles';
+import ViewContract from '../ViewContract';
 
 export default function Contracts() {
+  const [contracts, setContracts] = useState([]);
+
+  useEffect(() => {
+    async function loadContracts() {
+      const response = await api.get('/contracts');
+
+      setContracts(response.data);
+    }
+
+    loadContracts();
+  }, []);
+
   return (
     <Container>
       <Header />
       <Boxer>
         <Link to="/newcontract">
-          <button className="new" type="submit">Novo Contrato</button>
+          <button className="new" type="submit">
+            Novo Contrato
+          </button>
         </Link>
         <div>
-          <input type="text" id="txtBusca" placeholder="Buscar..."/>
-          <button className="search" type="submit">Pesquisar</button>
+          <input type="text" id="txtBusca" placeholder="Buscar..." />
+          <button className="search" type="submit">
+            Pesquisar
+          </button>
         </div>
       </Boxer>
+
       <ListContracts>
         <h3>Todos os contratos</h3>
-          <li>
-            <Link to="viewcontract">
-              Contrato
+        {contracts.map(contract => (
+          <li key={contract.id}>
+            <Link to="viewcontract" Params={contract}>
+              {contract.title}
             </Link>
             <div className="divDelete">
               <button className="delete" title="Deletar contato">
@@ -33,17 +53,13 @@ export default function Contracts() {
               </button>
             </div>
           </li>
-        <li>Contrato</li>
-        <li>Contrato</li>
-        <li>Contrato</li>
-        <li>Contrato</li>
-        <li>Contrato</li>
-        <li>Contrato</li>
+        ))}
       </ListContracts>
     </Container>
   );
 }
-
-/**<Box>
-            <h3>Novo</h3>
-          </Box>*/
+/**<div className="divDelete">
+                <button className="delete" title="Deletar contato">
+                  <img src={deleteIcon} alt="delete icon" />
+                </button>
+              </div> */

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
 
-
 export const Container = styled.div`
   display: flex;
   padding: 140px;
@@ -30,6 +29,5 @@ export const Container = styled.div`
       background: ${darken(0.04, '#fff')};
     }
   }
-  }
-
+}
 `;

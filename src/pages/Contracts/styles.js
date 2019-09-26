@@ -7,12 +7,10 @@ export const Boxer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
   div {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-
     input {
       flex-direction: row;
       justify-content: flex-end;
@@ -23,10 +21,9 @@ export const Boxer = styled.div`
       border-radius: 16px;
       color: #667581;
       font-size: 12px;
-      background: #f5f8fa url("/images/search.svg") no-repeat 190px center;
+      background: #f5f8fa url('/images/search.svg') no-repeat 190px center;
     }
   }
-
   button.search {
     margin: 35px 10px 0;
     height: 30px;
@@ -42,7 +39,6 @@ export const Boxer = styled.div`
       background: ${darken(0.04, '#fff')};
     }
   }
-
   button.new {
     margin: 50px 70px 0;
     height: 44px;
@@ -58,7 +54,6 @@ export const Boxer = styled.div`
       background: ${darken(0.04, '#fff')};
     }
   }
-
 `;
 
 export const Box = styled.div`
@@ -70,7 +65,6 @@ export const Box = styled.div`
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
   position: relative;
-
   h3 {
     display: flex;
     padding: 20px;
@@ -78,7 +72,6 @@ export const Box = styled.div`
     font-weight: bold;
     color: #00bfff;
   }
-
   ul {
   }
 `;
@@ -89,7 +82,6 @@ export const ListContracts = styled.ul`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   h3 {
     display: flex;
     padding: 20px;
@@ -97,7 +89,6 @@ export const ListContracts = styled.ul`
     font-weight: bold;
     color: #00bfff;
   }
-
   li {
     text-decoration: none;
     list-style: none;
@@ -112,30 +103,41 @@ export const ListContracts = styled.ul`
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     position: relative;
-
     a {
-      color:#00bfff;
+      color: #00bfff;
       text-decoration: none;
     }
-
     div.divDelete {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
-
       button.delete {
         border: 0;
         background-color: #ffffff;
       }
-
-      img.title{
+      img.title {
         color: #fff;
       }
     }
   }
+`;
 
-
-
-
+export const List = styled.ul`
+  list-style: none;
+  margin-top: 30px;
+  li {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    & + li {
+      border-top: 1px solid #eee;
+    }
+    a {
+      color: #7159c1;
+      text-decoration: none;
+    }
+  }
 `;
