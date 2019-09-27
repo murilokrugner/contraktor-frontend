@@ -7,6 +7,7 @@ export const Boxer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
   div {
     display: flex;
     flex-direction: row;

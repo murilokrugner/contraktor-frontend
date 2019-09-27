@@ -1,16 +1,22 @@
 import styled from 'styled-components';
 
-export const Container = styled.ul`
+export const Container = styled.div`
 
-  h1 {
+  div.box {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    color: #00bfff;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1350 px;
+    max-height: 500px;
   }
 
   div.partes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     text-decoration: none;
     list-style: none;
     font: 15px 'Roboto', sans-serif;
@@ -26,14 +32,100 @@ export const Container = styled.ul`
     position: relative;
 
     h3 {
-      margin-left: 160px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
       color: #00bfff;
     }
 
+    button.add {
+      border: 0;
+      background-color: #ffffff;
+      margin-top: 15px;
+    }
+
     li {
-      margin-top: 70px;
-      margin-left: 160px;
+      text-decoration: none;
+      list-style: none;
+      font: 15px 'Roboto', sans-serif;
+      font-weight: bold;
+      padding: 20px;
       color: #00bfff;
+      margin: 30px;
+      width: 25rem;
+      height: 5rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      position: relative;
+
+      div.divDelete {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      button.delete {
+        border: 0;
+        background-color: #ffffff;
+      }
+
+      img.title {
+        color: #fff;
+      }
     }
   }
+}
+
+  div.contract {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    list-style: none;
+    font: 15px 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    color: #00bfff;
+    margin: 60px;
+    width: 30rem;
+    height: 25rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    position: relative;
+
+    h3 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-decoration: none;
+      list-style: none;
+      font: 15px 'Roboto', sans-serif;
+      font-weight: bold;
+      padding: 20px;
+      color: #00bfff;
+      margin: 30px;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      position: relative;
+
+      button.view {
+        border: 0;
+        background-color: #ffffff;
+      }
+    }
 `;
