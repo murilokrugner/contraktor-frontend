@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard';
 import Contracts from './pages/Contracts';
 import ViewContract from './pages/ViewContract';
 import NewContracts from './pages/NewContracts';
+import NewPartes from './pages/NewPartes';
 
 export default function Routes() {
   return (
@@ -17,6 +18,7 @@ export default function Routes() {
         <Route path="/contracts" component={Contracts} />
         <Route path="/viewcontract" component={ViewContract} />
         <Route path="/newcontract" component={NewContracts} />
+        <Route path="/newpartes" component={NewPartes} />
       </Switch>
     </BrowserRouter>
   );

@@ -43,9 +43,13 @@ export default function Contracts() {
         <h3>Todos os contratos</h3>
         {contracts.map(contract => (
           <li key={contract.id}>
-            <Link to="viewcontract" Params={contract}>
-              {contract.title}
-            </Link>
+            <span>
+              <Link to="viewcontract" Params={contract}>
+                Título: {contract.title}
+              </Link>
+            </span>
+            <span>Data inicial: </span>
+            <span>Data final: </span>
             <div className="divDelete">
               <button className="delete" title="Deletar contato">
                 <img src={deleteIcon} alt="delete icon" />

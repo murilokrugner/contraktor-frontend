@@ -12,7 +12,7 @@ const schema = Yup.object().shape({
   finaldate: Yup.date().required('A data final é obrigatória'),
 });
 
-export default function Contracts() {
+export default function NewContracts() {
   return (
     <Container>
       <Header />
