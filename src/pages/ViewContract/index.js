@@ -14,7 +14,7 @@ export default function ViewContract() {
 
   useEffect(() => {
     async function loadPartes() {
-      const response = await api.get(`/partes/${this.props.match.params.id}`);
+      const response = await api.get('/partes');
 
       setPartes(response.data);
     }
@@ -26,7 +26,6 @@ export default function ViewContract() {
     <Container>
       <Header />
       <div className="box">
-
         <div className="partes">
           <h3>Partes referentes ao contrato</h3>
           <Link to="newpartes">
@@ -38,16 +37,19 @@ export default function ViewContract() {
             <li key={parte.id}>
               <span>Nome: {parte.name}</span>
               <span>Sobrenome: {parte.lastname}</span>
-              <span>CPF: {parte.cpf.replace(/(\d{3})(\d{3})(\d{3})/, '$1.$2.$3-')}</span>
-              <span>Telefone: {parte.phone.replace(/(\d{2})(\d{5})/, '$1 $2-')}</span>
-                <div className="divDelete">
-                  <button className="delete" title="Deletar contato">
-                    <img src={deleteIcon} alt="delete icon" />
-                  </button>
-                </div>
-           </li>
+              <span>
+                CPF: {parte.cpf.replace(/(\d{3})(\d{3})(\d{3})/, '$1.$2.$3-')}
+              </span>
+              <span>
+                Telefone: {parte.phone.replace(/(\d{2})(\d{5})/, '$1 $2-')}
+              </span>
+              <div className="divDelete">
+                <button className="delete" title="Deletar contato">
+                  <img src={deleteIcon} alt="delete icon" />
+                </button>
+              </div>
+            </li>
           ))}
-
         </div>
         <div className="contractdiv">
           <img src={arrowIcon} alt="seta" />
@@ -60,9 +62,7 @@ export default function ViewContract() {
             </li>
           </div>
         </div>
-
       </div>
     </Container>
   );
 }
-

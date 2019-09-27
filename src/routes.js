@@ -16,7 +16,7 @@ export default function Routes() {
         <Route path="/" exact component={Main} />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/contracts" component={Contracts} />
-        <Route path="/viewcontract/:id" component={ViewContract} />
+        <Route path="/viewcontract/" component={ViewContract} />
         <Route path="/newcontract" component={NewContracts} />
         <Route path="/newpartes" component={NewPartes} />
       </Switch>
