@@ -2,27 +2,81 @@
   "contracts": [
     {
       "id": 1,
-      "title": "Contrato de parceria"
+      "title": "Contrato de parceria",
+      "initialDate": "20/05/2019",
+      "finalDate": "20/05/2019"
     },
     {
       "id": 2,
-      "title": "Contrato de pesca"
+      "title": "Contrato de pesca",
+      "initialDate": "20/05/2019",
+      "finalDate": "20/05/2019"
     },
     {
       "id": 3,
-      "title": "Contrato de ordem de serviço"
-    },
-    {
-      "id": 5,
-      "title": "Contrato de Parceria Juridica"
-    },
-    {
-      "id": 6,
-      "title": "Contrato Mokado"
+      "title": "Contrato de ordem de serviço",
+      "initialDate": "20/05/2019",
+      "finalDate": "20/05/2019"
     },
     {
       "id": 4,
-      "title": "Contrato de aluguel"
+      "title": "Contrato de Parceria Juridica",
+      "initialDate": "20/05/2019",
+      "finalDate": "20/05/2019"
+    },
+    {
+      "id": 5,
+      "title": "Contrato Mokado",
+      "initialDate": "20/05/2019",
+      "finalDate": "20/05/2019"
+    },
+    {
+      "id": 6,
+      "title": "Contrato de aluguel",
+      "initialDate": "20/05/2019",
+      "finalDate": "20/05/2019"
+    }
+  ],
+  "partes": [
+    {
+      "id": 1,
+      "name": "Jose",
+      "lastname": "da Silva",
+      "cpf": "45874512569",
+      "phone": "14526359875",
+      "contract_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Jose da Silva",
+      "lastname": "da Silva",
+      "cpf": "45874512569",
+      "phone": "14526359875",
+      "contract_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Jose da Silva",
+      "lastname": "da Silva",
+      "cpf": "45874512569",
+      "phone": "14526359875",
+      "contract_id": 1
+    },
+    {
+      "id": 4,
+      "name": "Jose da Silva",
+      "lastname": "da Silva",
+      "cpf": "45874512569",
+      "phone": "14526359875",
+      "contract_id": 2
+    },
+    {
+      "id": 5,
+      "name": "Jose da Silva",
+      "lastname": "da Silva",
+      "cpf": "45874512569",
+      "phone": "14526359875",
+      "contract_id": 2
     }
   ]
 }
